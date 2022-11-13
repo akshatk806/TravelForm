@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%=title%> </title>
+</head>
+<body>
+    <div id="image"></div>
+
+    <div class="container">
+        <h1>Welcome to GGSIPU Travel form </h1>
+        <p>Enter your details and submit this form to  confirm your participation in trip </p>
+
+        <form action="/form-submit" method="POST">
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            <input type="text" name="age" id="age" placeholder="Enter your Age" required>
+            <input type="email" name="email" id="email" placeholder="Enter your email, name@example.com" required>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your Phone number, +91-XXXXXXXXXX" required>
+            <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter your Address" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        let button=document.querySelector('.btn');
+        button.addEventListener('click',()=>{
+            alert("Your Details has been submitted successfully")
+        })
+    </script>
+</body>
+</html>

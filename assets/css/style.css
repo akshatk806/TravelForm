@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#image{
+    background: url('/images/ggsipu.jpg') no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity:0.68;
+    height: 100%;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+.container h1,p{
+    text-align: center;
+}
+
+input,textarea{
+    display: block;
+    width: 80%;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    margin: 11px auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus,textarea:focus{
+    box-shadow: 0 1rem 2rem rgb(0,0,0,0.3);
+    border:2px solid rgb(58, 58, 58)
+}
+
+.btn{
+    color: white;
+    background-color: purple;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1.4px solid white;
+    margin: 20px auto;
+}
+.btn:hover{
+    background-color: rgb(78, 4, 78);
+}
+.btn:active{
+    background-color: rgb(56, 4, 56);
+}
+
+/*
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:992px){
+    html,input,textarea{
+        font-size: 17.5px;
+    }
+    input,textarea{
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width:768px){
+    html,input,textarea{
+        font-size: 14.5px;
+    }
+}
+@media only screen and (max-width:576px){
+    html,input,textarea{
+        font-size: 10px;
+    }
+}*/
